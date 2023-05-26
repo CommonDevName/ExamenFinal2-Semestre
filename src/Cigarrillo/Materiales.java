@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Materiales {
     
-    private int[] matricula = {0,7,0,7,1,5};
+    public static int[] matricula = {0,7,0,7,1,5};
     private int Hojas;
     private int Tiempo;
     private int Aroma;
