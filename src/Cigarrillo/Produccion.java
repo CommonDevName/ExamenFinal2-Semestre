@@ -32,10 +32,10 @@ public class Produccion {
         tipoDePaquete = (Materiales.matricula[5] % 2 == 0)?14:20;
         cigarrillosSueltos = cigarrillos;
         int i = 0;
-        while(cigarrillosSueltos > tipoDePaquete){
+        while(cigarrillosSueltos >= tipoDePaquete){
             cigarrillosSueltos = cigarrillosSueltos - tipoDePaquete;
             i++;
-            System.out.println("\nEmpaquetado "+ i +".\n");
+            System.out.println("Empaquetado "+ i +".\n");
         }
         paquetes = i;
     }
@@ -45,8 +45,8 @@ public class Produccion {
         CigarrillosResultantes();
         Empaquetado();
         System.out.println("\nProceso finalizado.\n\n"+
-                           "Total de cigarrilos producidos: "+ cigarrillos +"./n"+
-                           "Paquetes producidos "+"("+ tipoDePaquete +"): "+ paquetes +".\n"+
+                           "Total de cigarrilos producidos: "+ cigarrillos +"\n"+
+                           "Paquetes producidos "+"("+ tipoDePaquete +"): "+ paquetes +"\n"+
                            "Cigarrillos Sueltos: "+ cigarrillosSueltos);
     }
 }
