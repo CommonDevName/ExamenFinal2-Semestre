@@ -1,50 +1,38 @@
 package Cigarrillo;
 
+import java.util.Arrays;
+
 public class Materiales {
     
-    public static int matricula = 070715;
-    public int Hojas;
-    public int Tiempo;
-    public int Aroma;
-    public int Azucar;
-    public int Nicotina;
+    private int[] matricula = {0,7,0,7,1,5};
+    private int Hojas;
+    private int Tiempo;
+    private int Aroma;
+    private int Azucar;
+    private int Nicotina;
 
-    public Materiales(){}
-
-    public void SetHojas(){
-        this.Hojas = 15;
+    public Materiales(){
+        this.Hojas = (matricula[4]*10) + matricula[5];
+        this.Tiempo = matricula[4] + matricula[5];
+        this.Aroma = (matricula[0]*10) + matricula[1];
+        this.Azucar = (matricula[2]*10) + matricula[3];
+        this.Nicotina = matricula[0] + matricula[5];
     }
 
     public int GetHojas(){
         return Hojas;
     }
 
-    public void SetTiempo(){
-        this.Tiempo = 1+5;
-    }
-
     public int GetTiempo(){
         return Tiempo;
-    }
-
-    public void SetAroma(){
-        this.Aroma = 7;
     }
 
     public int GetAroma(){
         return Aroma;
     }
 
-    public void SetAzucar(){
-        this.Azucar = 7;
-    }
-
     public int GetAzucar(){
         return Azucar;
-    }
-
-    public void SetNicotina(){
-        this.Nicotina = 0+5;
     }
 
     public int GetNicotina(){

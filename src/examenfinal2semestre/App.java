@@ -7,7 +7,7 @@ package examenfinal2semestre;
 public class App {
 
     public static void main(String[] args) {
-        
+
     }
     
 }
